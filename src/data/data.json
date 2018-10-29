@@ -1,0 +1,81 @@
+[
+  {
+    "name": "Джейсон Стейтем",
+    "rang": "Мастер ножей",
+    "addDate": "26.08.1967",
+    "image": "./img/Statham.jpg",
+    "id": "1"
+  },
+
+  {
+    "name": "Ван Дамм",
+    "rang": "Танцор",
+    "image": "./img/Vann.jpg",
+    "addDate": "08.10.1960",
+    "id": "2"
+  },
+
+  {
+    "name": "Сильвестр Сталоне",
+    "rang": "Полуликий",
+    "image": "./img/Stallone.jpg",
+    "addDate": "06.08.1946",
+    "id": "3"
+  },
+
+  {
+    "name": "Джет Ли",
+    "rang": "Фанат Брюса",
+    "image": "./img/Li.jpg",
+    "addDate": "27.02.1973",
+    "id": "4"
+  },
+
+  {
+    "name": "Брюс Ли",
+    "rang": "Кунг-Фу Мастер",
+    "image": "./img/Bruce.jpg",
+    "addDate": "10.06.1978",
+    "id": "5"
+  },
+
+  {
+    "name": "Кунг-Фу Панда",
+    "rang": "Учитель Брюса",
+    "image": "./img/Panda.jpg",
+    "addDate": "23.06.1980",
+    "id": "6"
+  },
+
+  {
+    "name": "Пикачу",
+    "rang": "Электрошокер",
+    "image": "./img/Picahu.jpg",
+    "addDate": "24.05.1999",
+    "id": "7"
+  },
+
+  {
+    "name": "Терминатор",
+    "rang": "Человек-Машина",
+    "image": "./img/Terminator.jpg",
+    "addDate": "12.03.2000",
+    "id": "8"
+  },
+
+  {
+    "name": "Чужой",
+    "rang": "Чужой",
+    "image": "./img/Alien.jpg",
+    "addDate": "22.08.1989",
+    "id": "9"
+  },
+
+  {
+    "name": "Гарри Данн",
+    "rang": "Тупой",
+    "image": "./img/Garry.jpg",
+    "addDate": "14.09.2003",
+    "id": "10"
+  }
+]

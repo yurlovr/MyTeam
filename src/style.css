@@ -1,0 +1,535 @@
+body {
+  padding: 0;
+  margin: auto;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #222222;
+}
+.visually-hidden {
+  position: absolute;
+  padding: 0;
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+a:hover {
+  opacity: 0.3;
+}
+ul {
+  list-style: none;
+}
+.btn__null {
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+  font-weight: 400;
+  color: #ffffff;
+  background: none;
+  border: 0;
+  overflow: visible;
+  cursor: pointer;
+}
+@media (min-width: 320px) {
+  body {
+    width: 320px;
+  }
+  .btn__slider {
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    transition: 0.3s ease;
+  }
+  .btn__slider-current {
+    background-color: #fcac45;
+  }
+  .btn__slider:hover,
+  .btn__slider:focus {
+    opacity: 0.3;
+  }
+  .header {
+    padding: 0;
+    margin: 0;
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .page__main {
+    display: flex;
+    flex-direction: column;
+  }
+  .page__footer {
+    display: flex;
+    justify-content: space-around;
+  }
+  .myteam {
+    background-color: #222222;
+    padding-top: 55px;
+    position: relative;
+    padding-bottom: 45px;
+  }
+  .myteam__header {
+    color: #ffffff;
+  }
+  .myteam__header-super {
+    font-weight: 600;
+  }
+  .myteam__header::before {
+    position: absolute;
+    content: "";
+    margin: 0;
+    padding: 0;
+    width: 99px;
+    height: 5px;
+    background-image: url("data/images/longline.png");
+    left: 110px;
+    top: 100px;
+  }
+  .myteam__header::after {
+    position: absolute;
+    content: "";
+    margin: 0;
+    padding: 0;
+    width: 67px;
+    height: 5px;
+    background-image: url("data/images/shortline.png");
+    left: 125px;
+    top: 115px;
+  }
+  .slider {
+    margin: 0;
+    padding: 0;
+    margin-top: 55px;
+  }
+  .slider__list {
+    width: 290px;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 413px;
+    align-items: center;
+  }
+  .slider__btn-list {
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero {
+    width: 130px;
+  }
+  .hero__link {
+    display: block;
+    text-align: center;
+  }
+  .hero__photo {
+    width: 128px;
+    height: 127px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  .hero__name {
+    margin: 0;
+    padding: 0;
+    margin-top: -10px;
+    margin-bottom: 27px;
+    text-align: center;
+    width: 130px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+  .hero__name-skill {
+    display: none;
+  }
+  .hero__born {
+    display: none;
+  }
+  .addhero {
+    color: #222222;
+    background-color: #ffffff;
+    position: relative;
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+  .addhero__header {
+    margin-left: 10px;
+  }
+  .addhero__header-hero {
+    font-weight: 600;
+  }
+  .addhero__header-hero::before {
+    position: absolute;
+    content: "";
+    margin: 0;
+    padding: 0;
+    width: 99px;
+    height: 5px;
+    background-image: url("data/images/longline.png");
+    left: 110px;
+    top: 115px;
+  }
+  .addhero__header-hero::after {
+    position: absolute;
+    content: "";
+    margin: 0;
+    padding: 0;
+    width: 67px;
+    height: 5px;
+    background-image: url("data/images/shortline.png");
+    left: 125px;
+    top: 130px;
+  }
+  .addhero__form {
+    margin-top: 50px;
+  }
+  .registration {
+    position: relative;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+  }
+  .registration__label {
+    position: absolute;
+    width: 250px;
+  }
+  .registration__label-index {
+    color: #db0000;
+  }
+  .registration__label-name {
+    top: 5px;
+    left: 25px;
+  }
+  .registration__label-rang {
+    top: 90px;
+    left: 25px;
+  }
+  .registration__label-mobile {
+    top: 175px;
+    left: 25px;
+  }
+  .registration__label-photo {
+    top: 175px;
+    left: auto;
+  }
+  .registration__input {
+    display: inline-block;
+    width: 250px;
+    height: 40px;
+    padding: 0;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .registration__input-textarea {
+    width: 250px;
+    height: 108px;
+    margin-bottom: 70px;
+    padding-top: 20px;
+    font-size: 12px;
+    display: none;
+  }
+  .registration__btn {
+    width: 165px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #fcac45;
+    color: #ffffff;
+    transition: 0.3s ease;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 55px;
+  }
+  .registration__btn:hover,
+  .registration__btn:active {
+    opacity: 0.3;
+  }
+  .footer {
+    padding-left: 12px;
+    padding-bottom: 20px;
+  }
+  .footer__copyright {
+    display: none;
+  }
+  .social {
+    width: 300px;
+  }
+  .social__list {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin-top: 20px;
+  }
+  .social__item {
+    position: relative;
+    width: 33px;
+    height: 32px;
+  }
+  .social__item .facebook::before {
+    position: absolute;
+    content: "";
+    margin: 0;
+    padding: 0;
+    width: 33px;
+    height: 32px;
+    background-image: url("data/images/facebook.png");
+    background-repeat: no-repeat;
+    left: -18px;
+    top: 10px;
+  }
+  .social__item .twitter::before {
+    position: absolute;
+    content: "";
+    margin: 0;
+    padding: 0;
+    width: 33px;
+    height: 32px;
+    background-image: url("data/images/twitter.png");
+    background-repeat: no-repeat;
+    left: -8px;
+    top: 10px;
+  }
+  .social__item .google::before {
+    position: absolute;
+    content: "";
+    margin: 0;
+    padding: 0;
+    width: 33px;
+    height: 32px;
+    background-image: url("data/images/google.png");
+    background-repeat: no-repeat;
+    left: 5px;
+    top: 10px;
+  }
+  .social__item .linkedin::before {
+    position: absolute;
+    content: "";
+    margin: 0;
+    padding: 0;
+    width: 33px;
+    height: 32px;
+    background-image: url("data/images/linkedin.png");
+    background-repeat: no-repeat;
+    left: 17px;
+    top: 10px;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    width: 768px;
+  }
+  .btn__slider {
+    width: 9px;
+    height: 9px;
+  }
+  .header {
+    font-size: 44px;
+    line-height: 24px;
+  }
+  .myteam {
+    background-color: #222222;
+    padding-top: 100px;
+    padding-bottom: 64px;
+  }
+  .myteam__header::before {
+    left: 340px;
+    top: 162px;
+  }
+  .myteam__header::after {
+    left: 356px;
+    top: 177px;
+  }
+  .slider {
+    margin-top: 150px;
+  }
+  .slider__list {
+    width: 738px;
+    margin-bottom: 84px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 437px;
+  }
+  .slider__item {
+    display: block;
+  }
+  .slider__btn-list {
+    width: 55px;
+  }
+  .hero {
+    width: 260px;
+  }
+  .hero__name {
+    width: 262px;
+  }
+  .hero__name-skill {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    display: block;
+  }
+  .addhero {
+    padding-top: 110px;
+    padding-bottom: 100px;
+  }
+  .addhero__header-hero::before {
+    left: 340px;
+    top: 170px;
+  }
+  .addhero__header-hero::after {
+    left: 356px;
+    top: 183px;
+  }
+  .addhero__form {
+    margin-top: 112px;
+  }
+  .registration {
+    width: 650px;
+  }
+  .registration__label {
+    position: static;
+    display: inline-block;
+    width: 300px;
+  }
+  .registration__label-photo {
+    display: block;
+  }
+  .registration__label-mobile {
+    display: none;
+  }
+  .registration__input {
+    display: inline-block;
+    width: 300px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  .registration__input-textarea {
+    display: block;
+    width: 650px;
+    height: 108px;
+    margin-bottom: 118px;
+    padding-top: 45px;
+    padding-bottom: 0;
+    border: 1px dashed #b2b2b2;
+    font-size: 12px;
+    text-align: center;
+  }
+  .registration__input-textarea-highlight {
+    border-color: #fcac45;
+  }
+  .registration__input-mobile {
+    display: none;
+  }
+  .registration__btn {
+    margin-left: 185px;
+    align-self: flex-end;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-around;
+  }
+  .footer__copyright {
+    display: block;
+    width: 300px;
+    margin-top: 21px;
+    font-size: 11px;
+    line-height: 54px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #b2b2b2;
+  }
+  .footer__copyright-link {
+    color: #b2b2b2;
+    font-weight: 700;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    width: 1200px;
+  }
+  .myteam__header::before {
+    left: 46.7%;
+    top: 162px;
+  }
+  .myteam__header::after {
+    left: 48%;
+    top: 177px;
+  }
+  .slider__list {
+    width: 1140px;
+  }
+  .hero__born {
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .addhero__header-hero::before {
+    left: 46.7%;
+    top: 162px;
+  }
+  .addhero__header-hero::after {
+    left: 48%;
+    top: 177px;
+  }
+  .registration {
+    width: 750px;
+    justify-content: space-between;
+  }
+  .registration__label {
+    display: inline-block;
+    width: 360px;
+  }
+  .registration__input {
+    width: 360px;
+  }
+  .registration__input-textarea {
+    width: 750px;
+  }
+  .registration__btn {
+    margin-left: 225px;
+  }
+  .footer {
+    justify-content: center;
+  }
+  .footer__copyright {
+    width: 500px;
+  }
+  .social {
+    width: 555px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
